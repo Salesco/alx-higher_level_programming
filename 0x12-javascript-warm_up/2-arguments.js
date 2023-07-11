@@ -1,8 +1,10 @@
 #!/usr/bin/node
-
-if (process.argv.length <= 2) {
+/* cheeck for arg */
+const a = process.argv.length;
+if (a === 2) {
   console.log('No argument');
-} else if (process.argv.length === 3) {
+} else if (a === 3) {
   console.log('Argument found');
 } else {
   console.log('Arguments found');
+}
